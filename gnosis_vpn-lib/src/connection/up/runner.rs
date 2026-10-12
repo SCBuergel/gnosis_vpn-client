@@ -349,8 +349,12 @@ async fn open_spliced_wg_session(
         return_path: destination.routing,
         always_max_out_surbs: surb.always_max_out_surbs,
         surb_management: surb.management,
-        // Robust tail-tolerance profile for the WireGuard data session.
-        flow_control: Some(FlowControlConfig::robust()),
+        // Robust tail-tolerance profile for the WireGuard data session, without its 2 s frame-age bound:
+        // the stateless WG session has no retransmission, so the receive sequencer waits out a lost frame
+        // for frame_timeout (3 s) and every frame queued behind the gap is then older than 2 s and
+        // discarded as stale. After a relay outage the traffic is too thin to skip gaps early, every
+        // delivered frame is discarded, and the tunnel deadlocks until a new session (T37-relay-outage).
+        flow_control: Some(FlowControlConfig { max_frame_age: None, ..FlowControlConfig::robust() }),
         ..Default::default()
     };
     (|| async {

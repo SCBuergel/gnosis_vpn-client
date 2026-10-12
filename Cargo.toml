@@ -89,3 +89,27 @@ lto           = "fat"
 opt-level     = 3
 panic         = "abort"
 strip         = true
+
+# T37-relay-outage debugging: hoprnet release/4.0 @ 7aad538 + the sequencer gap fix (local branch seqfix)
+[patch."https://github.com/hoprnet/hoprnet"]
+hopr-crypto-packet = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
+hopr-lib = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
+hopr-protocol-app = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
+hopr-protocol-hopr = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
+hopr-protocol-session = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
+hopr-protocol-start = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
+hopr-transport = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
+hopr-transport-mixer = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
+hopr-transport-probe = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
+hopr-transport-session = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
+hopr-transport-tag-allocator = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
+hopr-utils-session = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
+
+# T37-relay-outage debugging: settable QUIC idle timeout and keep-alive (local branch quic)
+[patch.crates-io]
+hopr-transport-p2p = { git = "file:///opt/gitsrc/hopr-impls.git", branch = "feat/p2p-quic-timeouts" }
+libp2p-quic = { git = "file:///opt/gitsrc/libp2p-quic.git" }
+quinn-proto = { git = "file:///opt/gitsrc/quinn-proto.git" }
+
+[patch."https://github.com/NordSecurity/neptun.git"]
+neptun = { git = "file:///opt/gitsrc/neptun.git", branch = "hopr" }

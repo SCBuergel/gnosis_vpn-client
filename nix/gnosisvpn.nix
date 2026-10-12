@@ -30,6 +30,14 @@ let
   # commit instead, which is also substitutable from the cachix cache.
   # Update these whenever Cargo.lock's rev for the corresponding dependency changes.
   outputHashes = {
+    "git+file:///opt/gitsrc/quinn-proto.git#d01a88479b905076294bdd8f2c5c93498498f73d" =
+      "sha256-oi1ns3hC5ZiuCX9ygajvYdEhbjG07yrbOMIQojlrnlo=";
+    "git+file:///opt/gitsrc/libp2p-quic.git#4eec3c8ffec23d9aec55a439945fe5d406b2257f" =
+      "sha256-53fV5AgtBMkKAdcStii2+NLJVAaetJKjDidJGDBWi7U=";
+    "git+file:///opt/gitsrc/hoprnet.git?branch=trial#980ce1b2e4b35386b9604d6de83049ca59543a3e" =
+      "sha256-76mWTVtrLZKvYE9ReEwYwwm0z0UxnG3ym/hB0mECXoU=";
+    "git+file:///opt/gitsrc/hopr-impls.git?branch=feat%2Fp2p-quic-timeouts#a38f9a8b1e7773d51e650344e793cb388074b6d3" =
+      "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
     "git+https://github.com/NordSecurity/neptun.git?tag=v3.0.4#0aebe247729574acc449f9debd62fc8d419dbf07" =
       "sha256-oxCxToa9dE2TslRNxvO19qZrOrf9qsUlB4u+ZNwzA28=";
     "git+https://github.com/hoprnet/edge-client.git?branch=release/4.1#a84a33ad1246341c655e75370cad0352b2f37ab9" =

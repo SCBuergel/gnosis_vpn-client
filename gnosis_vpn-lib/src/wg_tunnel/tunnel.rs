@@ -151,8 +151,16 @@ impl WgTunnel {
                 );
                 Step::Stale
             }
+            TunnResult::Err(e @ (WireGuardError::InvalidCounter | WireGuardError::DuplicateCounter)) => {
+                // A datagram older than the anti-replay window or seen before: the mixnet delivers frames late
+                // and out of order (a stalled relay link releases seconds of them at once), so these say nothing
+                // about the stream's health and must not count toward the desync guard, which otherwise tore a
+                // healthy tunnel down whenever a burst of late frames made up half of a window.
+                tracing::debug!(?e, "dropping inbound datagram: outside the anti-replay window");
+                Step::Done
+            }
             TunnResult::Err(e) => {
-                // Per-datagram drop, never a teardown: replays and garbage are routine over the mixnet.
+                // Per-datagram drop, never a teardown: garbage is routine over the mixnet.
                 tracing::debug!(?e, "dropping inbound datagram: wireguard decapsulate error");
                 Step::Failed
             }
