@@ -30,6 +30,10 @@ let
   # commit instead, which is also substitutable from the cachix cache.
   # Update these whenever Cargo.lock's rev for the corresponding dependency changes.
   outputHashes = {
+    "git+https://github.com/SCBuergel/rust-libp2p?branch=jitter-fix#cb44d2d8280e5fc4b067a8add0c6c21d6498b068" =
+      "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    "git+https://github.com/SCBuergel/quinn?branch=jitter-fix#e4f7f28a53ed8b0f0da13560c8e2818ffd5aa930" =
+      "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
     "git+https://github.com/NordSecurity/neptun.git?tag=v3.0.4#0aebe247729574acc449f9debd62fc8d419dbf07" =
       "sha256-oxCxToa9dE2TslRNxvO19qZrOrf9qsUlB4u+ZNwzA28=";
     "git+https://github.com/hoprnet/edge-client.git?branch=release/4.1#a84a33ad1246341c655e75370cad0352b2f37ab9" =
