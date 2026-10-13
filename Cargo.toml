@@ -90,26 +90,26 @@ opt-level     = 3
 panic         = "abort"
 strip         = true
 
-# T37-relay-outage debugging: hoprnet release/4.0 @ 7aad538 + the sequencer gap fix (local branch seqfix)
+# Jitter fix candidate (2026-10-13): QUIC loss detection and congestion-window floor, session and SURB fixes.
+# Every change is behind HOPR_INTERNAL_* environment knobs; see the branch notes in each fork.
 [patch."https://github.com/hoprnet/hoprnet"]
-hopr-crypto-packet = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
-hopr-lib = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
-hopr-protocol-app = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
-hopr-protocol-hopr = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
-hopr-protocol-session = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
-hopr-protocol-start = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
-hopr-transport = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
-hopr-transport-mixer = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
-hopr-transport-probe = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
-hopr-transport-session = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
-hopr-transport-tag-allocator = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
-hopr-utils-session = { git = "file:///opt/gitsrc/hoprnet.git", branch = "trial" }
+hopr-crypto-packet = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-lib = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-protocol-app = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-protocol-hopr = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-protocol-session = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-protocol-start = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-transport = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-transport-mixer = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-transport-probe = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-transport-session = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-transport-tag-allocator = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
+hopr-utils-session = { git = "https://github.com/SCBuergel/hoprnet", branch = "jitter-fix" }
 
-# T37-relay-outage debugging: settable QUIC idle timeout and keep-alive (local branch quic)
 [patch.crates-io]
-hopr-transport-p2p = { git = "file:///opt/gitsrc/hopr-impls.git", branch = "feat/p2p-quic-timeouts" }
-libp2p-quic = { git = "file:///opt/gitsrc/libp2p-quic.git" }
-quinn-proto = { git = "file:///opt/gitsrc/quinn-proto.git" }
+hopr-transport-p2p = { git = "https://github.com/SCBuergel/hopr-impls", branch = "feat/p2p-quic-timeouts" }
+libp2p-quic = { git = "https://github.com/SCBuergel/rust-libp2p", branch = "jitter-fix" }
+quinn-proto = { git = "https://github.com/SCBuergel/quinn", branch = "jitter-fix" }
 
 [patch."https://github.com/NordSecurity/neptun.git"]
-neptun = { git = "file:///opt/gitsrc/neptun.git", branch = "hopr" }
+neptun = { git = "https://github.com/SCBuergel/neptun", branch = "jitter-fix" }
