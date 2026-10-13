@@ -30,16 +30,6 @@ let
   # commit instead, which is also substitutable from the cachix cache.
   # Update these whenever Cargo.lock's rev for the corresponding dependency changes.
   outputHashes = {
-    "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50" =
-      "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
-    "git+https://github.com/SCBuergel/hopr-impls?branch=feat%2Fp2p-quic-timeouts#a38f9a8b1e7773d51e650344e793cb388074b6d3" =
-      "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
-    "git+https://github.com/SCBuergel/rust-libp2p?branch=jitter-fix#032c2ee1821c0247ab69b38b069339834ca84959" =
-      "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
-    "git+https://github.com/SCBuergel/quinn?branch=jitter-fix#e4f7f28a53ed8b0f0da13560c8e2818ffd5aa930" =
-      "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
-    "git+https://github.com/SCBuergel/neptun?branch=jitter-fix#65618b69d9f15620485f579fdd4468d3c67c37ed" =
-      "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
     "git+https://github.com/NordSecurity/neptun.git?tag=v3.0.4#0aebe247729574acc449f9debd62fc8d419dbf07" =
       "sha256-oxCxToa9dE2TslRNxvO19qZrOrf9qsUlB4u+ZNwzA28=";
     "git+https://github.com/hoprnet/edge-client.git?branch=release/4.1#a84a33ad1246341c655e75370cad0352b2f37ab9" =

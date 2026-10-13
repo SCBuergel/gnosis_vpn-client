@@ -854,7 +854,7 @@ version = "1.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "40c48f72fd53cd289104fc64099abca73db4166ad86ea0b4341abe65af83dadc"
 dependencies = [
- "windows-sys 0.60.2",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -865,7 +865,7 @@ checksum = "291e6a250ff86cd4a820112fb8898808a366d8f9f58ce16d1f538353ad55747d"
 dependencies = [
  "anstyle",
  "once_cell_polyfill",
- "windows-sys 0.60.2",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -2678,7 +2678,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c54e03a951783e8b327515db3f2a2fd0e3bed362a96b066f341ce66ed49b4ead"
 dependencies = [
  "data-encoding",
- "syn 1.0.109",
+ "syn 3.0.3",
 ]
 
 [[package]]
@@ -3152,7 +3152,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "39cab71617ae0d63f51a36d69f866391735b51691dbda63cf6f96d042b63efeb"
 dependencies = [
  "libc",
- "windows-sys 0.60.2",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -4204,7 +4204,7 @@ dependencies = [
 [[package]]
 name = "hopr-crypto-packet"
 version = "1.4.0"
-source = "git+file:///opt/gitsrc/hoprnet.git?branch=trial#980ce1b2e4b35386b9604d6de83049ca59543a3e"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
 dependencies = [
  "bimap",
  "const-hex",
@@ -4240,7 +4240,7 @@ dependencies = [
 [[package]]
 name = "hopr-lib"
 version = "4.0.5"
-source = "git+file:///opt/gitsrc/hoprnet.git?branch=trial#980ce1b2e4b35386b9604d6de83049ca59543a3e"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
 dependencies = [
  "anyhow",
  "async-broadcast",
@@ -4292,7 +4292,7 @@ dependencies = [
 [[package]]
 name = "hopr-protocol-app"
 version = "1.1.0"
-source = "git+file:///opt/gitsrc/hoprnet.git?branch=trial#980ce1b2e4b35386b9604d6de83049ca59543a3e"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
 dependencies = [
  "hopr-crypto-packet",
  "hopr-types",
@@ -4305,7 +4305,7 @@ dependencies = [
 [[package]]
 name = "hopr-protocol-hopr"
 version = "6.2.0"
-source = "git+file:///opt/gitsrc/hoprnet.git?branch=trial#980ce1b2e4b35386b9604d6de83049ca59543a3e"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -4334,7 +4334,7 @@ dependencies = [
 [[package]]
 name = "hopr-protocol-session"
 version = "1.5.0"
-source = "git+file:///opt/gitsrc/hoprnet.git?branch=trial#980ce1b2e4b35386b9604d6de83049ca59543a3e"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
 dependencies = [
  "aquamarine",
  "asynchronous-codec",
@@ -4365,7 +4365,7 @@ dependencies = [
 [[package]]
 name = "hopr-protocol-start"
 version = "1.1.0"
-source = "git+file:///opt/gitsrc/hoprnet.git?branch=trial#980ce1b2e4b35386b9604d6de83049ca59543a3e"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
 dependencies = [
  "aquamarine",
  "flagset",
@@ -4434,7 +4434,7 @@ dependencies = [
 [[package]]
 name = "hopr-transport"
 version = "0.48.6"
-source = "git+file:///opt/gitsrc/hoprnet.git?branch=trial#980ce1b2e4b35386b9604d6de83049ca59543a3e"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
 dependencies = [
  "ahash",
  "anyhow",
@@ -4477,7 +4477,7 @@ dependencies = [
 [[package]]
 name = "hopr-transport-mixer"
 version = "0.4.1"
-source = "git+file:///opt/gitsrc/hoprnet.git?branch=trial#980ce1b2e4b35386b9604d6de83049ca59543a3e"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
 dependencies = [
  "futures",
  "futures-timer",
@@ -4494,7 +4494,7 @@ dependencies = [
 [[package]]
 name = "hopr-transport-p2p"
 version = "0.9.7"
-source = "git+file:///opt/gitsrc/hopr-impls.git?branch=feat%2Fp2p-quic-timeouts#a38f9a8b1e7773d51e650344e793cb388074b6d3"
+source = "git+https://github.com/SCBuergel/hopr-impls?branch=feat%2Fp2p-quic-timeouts#a38f9a8b1e7773d51e650344e793cb388074b6d3"
 dependencies = [
  "async-broadcast",
  "async-trait",
@@ -4517,7 +4517,7 @@ dependencies = [
 [[package]]
 name = "hopr-transport-probe"
 version = "0.8.0"
-source = "git+file:///opt/gitsrc/hoprnet.git?branch=trial#980ce1b2e4b35386b9604d6de83049ca59543a3e"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -4543,7 +4543,7 @@ dependencies = [
 [[package]]
 name = "hopr-transport-session"
 version = "0.30.3"
-source = "git+file:///opt/gitsrc/hoprnet.git?branch=trial#980ce1b2e4b35386b9604d6de83049ca59543a3e"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -4575,7 +4575,7 @@ dependencies = [
 [[package]]
 name = "hopr-transport-tag-allocator"
 version = "0.1.1"
-source = "git+file:///opt/gitsrc/hoprnet.git?branch=trial#980ce1b2e4b35386b9604d6de83049ca59543a3e"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
 dependencies = [
  "hopr-protocol-app",
  "serde",
@@ -4686,7 +4686,7 @@ dependencies = [
 [[package]]
 name = "hopr-utils-session"
 version = "1.2.1"
-source = "git+file:///opt/gitsrc/hoprnet.git?branch=trial#980ce1b2e4b35386b9604d6de83049ca59543a3e"
+source = "git+https://github.com/SCBuergel/hoprnet?branch=jitter-fix#dc81adccbbd19d596b03cc4a6d3aa2e6c2b52a50"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -5742,7 +5742,7 @@ dependencies = [
 [[package]]
 name = "libp2p-quic"
 version = "0.13.1"
-source = "git+file:///opt/gitsrc/libp2p-quic.git#4eec3c8ffec23d9aec55a439945fe5d406b2257f"
+source = "git+https://github.com/SCBuergel/rust-libp2p?branch=jitter-fix#e29aa90f33ea65015f470371e9a3c61570890996"
 dependencies = [
  "futures",
  "futures-timer",
@@ -6189,7 +6189,7 @@ checksum = "27b02d87554356db9e9a873add8782d4ea6e3e58ea071a9adb9a2e8ddb884a8b"
 [[package]]
 name = "neptun"
 version = "2.2.3"
-source = "git+https://github.com/NordSecurity/neptun.git?tag=v3.0.4#0aebe247729574acc449f9debd62fc8d419dbf07"
+source = "git+https://github.com/SCBuergel/neptun?branch=jitter-fix#65618b69d9f15620485f579fdd4468d3c67c37ed"
 dependencies = [
  "aead",
  "base64 0.22.1",
@@ -6410,7 +6410,7 @@ version = "0.50.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7957b9740744892f114936ab4a57b3f487491bbeafaf8083688b16841a4240e5"
 dependencies = [
- "windows-sys 0.60.2",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -7249,7 +7249,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b570b25f7617e43d59005d0990ccb79e950a423952cea19671b7a876da390adf"
 dependencies = [
  "anyhow",
- "itertools 0.10.5",
+ "itertools 0.13.0",
  "proc-macro2",
  "quote",
  "syn 2.0.119",
@@ -7310,7 +7310,7 @@ dependencies = [
 [[package]]
 name = "quinn-proto"
 version = "0.11.16"
-source = "git+file:///opt/gitsrc/quinn-proto.git#d01a88479b905076294bdd8f2c5c93498498f73d"
+source = "git+https://github.com/SCBuergel/quinn?branch=jitter-fix#e4f7f28a53ed8b0f0da13560c8e2818ffd5aa930"
 dependencies = [
  "aws-lc-rs",
  "bytes",
@@ -7341,7 +7341,7 @@ dependencies = [
  "once_cell",
  "socket2 0.6.5",
  "tracing",
- "windows-sys 0.60.2",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -7353,7 +7353,7 @@ dependencies = [
  "cfg_aliases",
  "libc",
  "socket2 0.6.5",
- "windows-sys 0.60.2",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -7841,7 +7841,7 @@ dependencies = [
  "errno",
  "libc",
  "linux-raw-sys",
- "windows-sys 0.60.2",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -7900,7 +7900,7 @@ dependencies = [
  "security-framework",
  "security-framework-sys",
  "webpki-root-certs",
- "windows-sys 0.60.2",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -8527,7 +8527,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c3d1e2c7f27f8d4cb10542a02c49005dbd6e93095799d6f3be745fae9f8fedd4"
 dependencies = [
  "libc",
- "windows-sys 0.60.2",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -8762,7 +8762,7 @@ dependencies = [
  "getrandom 0.3.4",
  "once_cell",
  "rustix",
- "windows-sys 0.60.2",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
@@ -9565,7 +9565,7 @@ version = "0.1.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c2a7b1c03c876122aa43f3020e6c3c3ee5c05081c9a00739faf7503aeba10d22"
 dependencies = [
- "windows-sys 0.60.2",
+ "windows-sys 0.61.2",
 ]
 
 [[package]]
