@@ -94,6 +94,6 @@ opt-level     = 3
 panic         = "abort"
 strip         = true
 
-# CORE-1411 refill retry until hopr-strategy 9.2.1 is published
+# CORE-1411 refill retry and the relayed-deposit lookup retry (hopr-strategy#170) until hopr-strategy 9.2.1 is published
 [patch.crates-io]
-hopr-strategy = { git = "https://github.com/hoprnet/hopr-strategy", rev = "97bfc19a74235c814b322d355c2429100fac7174" }
+hopr-strategy = { git = "https://github.com/hoprnet/hopr-strategy", rev = "2c209bd3897d5c47ae358889c0c83f85274cabb3" }

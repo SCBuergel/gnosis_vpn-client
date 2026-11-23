@@ -5222,7 +5222,7 @@ dependencies = [
 [[package]]
 name = "hopr-strategy"
 version = "9.2.1"
-source = "git+https://github.com/hoprnet/hopr-strategy?rev=97bfc19a74235c814b322d355c2429100fac7174#97bfc19a74235c814b322d355c2429100fac7174"
+source = "git+https://github.com/hoprnet/hopr-strategy?rev=2c209bd3897d5c47ae358889c0c83f85274cabb3#2c209bd3897d5c47ae358889c0c83f85274cabb3"
 dependencies = [
  "anyhow",
  "async-trait",
